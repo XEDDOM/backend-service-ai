@@ -6,7 +6,7 @@ Backend-сервис с REST API, интеграцией AI (OpenAI) и файл
 
 ``` bash
 # Клонировать репозиторий и перейти в папку
-git https://github.com/XEDDOM/backend-service-ai.git
+git clone https://github.com/XEDDOM/backend-service-ai.git
 cd backend-service-ai
 
 # Создать виртуальное окружение
