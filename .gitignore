@@ -12,3 +12,6 @@ app/utils/__pycache__
 # metrics/logs
 data/*
 logs/*
+
+# .env
+.env
