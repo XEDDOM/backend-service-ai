@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AI Project</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <h1>👨‍💻 AI Project</h1>
+                <p>Backend Developer | Python | FastAPI | AI Integration</p>
+            </div>
+
+            <div class="card">
+                <h2>📬 Связь</h2>
+                
+                <div id="alert" class="alert"></div>
+
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Ваше имя *</label>
+                        <input type="text" id="name" name="name" placeholder="Иван" required minlength="2" maxlength="50">
+                        <div class="error-message" id="nameError"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Телефон *</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+79001234567" required pattern="\+?[1-9]\d{10,14}">
+                        <div class="error-message" id="phoneError"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" placeholder="ivan@example.com" required>
+                        <div class="error-message" id="emailError"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="comment">Комментарий *</label>
+                        <textarea id="comment" name="comment" placeholder="Расскажите о вашем проекте..." required minlength="10" maxlength="1000"></textarea>
+                        <div class="error-message" id="commentError"></div>
+                    </div>
+
+                    <button type="submit" id="submitBtn">
+                        Отправить сообщение
+                    </button>
+                </form>
+
+                <div id="aiResponse" class="ai-response">
+                    <h4>🤖 AI-анализ вашего обращения:</h4>
+                    <div id="sentimentBadge"></div>
+                    <p id="aiReply"></p>
+                </div>
+            </div>
+
+            <div class="footer">
+                <a class="footer-text" href="/docs">API Documentation</a>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
